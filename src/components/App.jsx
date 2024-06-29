@@ -1,8 +1,10 @@
-import user from '../../user.json';
+import user from '../user.json';
+import Profile from './Profile'
 
-const App = () => {
+function App() {
   return (
-    <>
+  
+<>
       <Profile
         name={user.username}
         tag={user.tag}
@@ -11,8 +13,7 @@ const App = () => {
         stats={user.stats}
       />
     </>
-  );
-};
+  )};
 
 
 export default App
